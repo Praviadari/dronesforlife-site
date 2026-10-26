@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Drones for Life</title>
+  <meta name="description" content="Building, flying and explaining drones for work that puts people at risk. Notes, builds and flight logs by A. Praveen.">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <meta property="og:title" content="Drones for Life">
+  <meta property="og:description" content="Building, flying and explaining drones for work that puts people at risk.">
+  <meta property="og:image" content="https://dronesforlife.in/assets/logo_1080.png">
+  <meta property="og:url" content="https://dronesforlife.in/">
+  <link rel="canonical" href="https://dronesforlife.in/">
+  <style>
+    :root {
+      --navy: #0E203A; --navy-2: #16345C; --accent: #F08C32;
+      --ink: #1B2430; --muted: #5B6675; --line: #E3E8EF; --bg: #FFFFFF; --soft: #F5F7FA;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0; background: var(--bg); color: var(--ink); line-height: 1.6;
+      font-family: "Segoe UI", system-ui, -apple-system, Roboto, "Helvetica Neue", Arial, sans-serif;
+    }
+    a { color: var(--navy-2); }
+    .wrap { max-width: 1040px; margin: 0 auto; padding: 0 20px; }
+
+    header { background: linear-gradient(135deg, var(--navy-2), var(--navy)); color: #fff; }
+    nav { display: flex; align-items: center; justify-content: space-between; padding: 18px 0; }
+    .brand { display: flex; align-items: center; gap: 10px; color: #fff; text-decoration: none; font-weight: 700; }
+    .brand img { width: 36px; height: 36px; }
+    nav ul { display: flex; gap: 22px; list-style: none; margin: 0; padding: 0; }
+    nav ul a { color: #D6E0EC; text-decoration: none; font-size: 15px; }
+    nav ul a:hover { color: #fff; }
+    .hero { display: grid; grid-template-columns: 1.4fr 1fr; gap: 40px; align-items: center; padding: 56px 0 72px; }
+    .hero h1 { font-size: clamp(32px, 5vw, 52px); line-height: 1.12; margin: 0 0 16px; }
+    .hero h1 span { color: var(--accent); }
+    .hero p { color: #D6E0EC; font-size: 18px; margin: 0 0 28px; max-width: 34em; }
+    .hero img { width: 100%; max-width: 320px; justify-self: center; }
+    .btn { display: inline-block; padding: 12px 22px; border-radius: 8px; font-weight: 600; text-decoration: none; }
+    .btn-primary { background: var(--accent); color: #1B1206; }
+    .btn-ghost { color: #fff; border: 1px solid #5C7799; margin-left: 10px; }
+
+    section { padding: 64px 0; }
+    section.alt { background: var(--soft); }
+    h2 { font-size: 28px; margin: 0 0 8px; color: var(--navy); }
+    .lead { color: var(--muted); margin: 0 0 32px; max-width: 42em; }
+    .grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; }
+    .card { background: #fff; border: 1px solid var(--line); border-radius: 12px; padding: 22px; }
+    .card h3 { margin: 0 0 8px; font-size: 17px; color: var(--navy); }
+    .card p { margin: 0; color: var(--muted); font-size: 15px; }
+    .card .tag { display: inline-block; font-size: 12px; font-weight: 700; letter-spacing: .04em;
+                 color: var(--accent); text-transform: uppercase; margin-bottom: 8px; }
+    .two { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
+    .facts { list-style: none; padding: 0; margin: 0; }
+    .facts li { padding: 10px 0; border-bottom: 1px solid var(--line); }
+    .facts b { color: var(--navy); }
+    .note { border-left: 4px solid var(--accent); background: #fff; padding: 16px 20px; border-radius: 0 8px 8px 0; }
+
+    footer { background: var(--navy); color: #AFC0D4; padding: 32px 0; font-size: 14px; }
+    footer a { color: #fff; }
+    .foot { display: flex; justify-content: space-between; gap: 20px; flex-wrap: wrap; }
+
+    @media (max-width: 860px) {
+      .grid { grid-template-columns: 1fr 1fr; }
+      .two { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 640px) {
+      nav ul { display: none; }
+      .hero { grid-template-columns: 1fr; padding: 32px 0 48px; }
+      .hero img { max-width: 180px; order: -1; }
+      .grid { grid-template-columns: 1fr; }
+      .btn-ghost { margin: 10px 0 0; }
+      section { padding: 48px 0; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <nav>
+        <a class="brand" href="#"><img src="assets/logo.svg" alt="">Drones for Life</a>
+        <ul>
+          <li><a href="#share">What I share</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#rules">Flying safely</a></li>
+          <li><a href="#follow">Follow</a></li>
+        </ul>
+      </nav>
+      <div class="hero">
+        <div>
+          <h1>Drones for the jobs that <span>put people at risk</span></h1>
+          <p>I build, fly and explain drones: how a frame is designed, how motors and props are sized, and how to fly within India's Drone Rules. Notes and builds, shared as I learn.</p>
+          <a class="btn btn-primary" href="https://www.instagram.com/dronesforlife.in/" rel="noopener">Follow on Instagram</a>
+          <a class="btn btn-ghost" href="#share">See what I share</a>
+        </div>
+        <img src="assets/logo.svg" alt="Drones for Life logo: a quadcopter seen from above">
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="share">
+      <div class="wrap">
+        <h2>What I share</h2>
+        <p class="lead">Practical drone engineering, explained simply. Everything here is my own build or from public sources.</p>
+        <div class="grid">
+          <div class="card"><span class="tag">Build</span><h3>Frame design</h3><p>Arm length, layout (True-X, Stretched-X), materials, and why a frame cracks where it does.</p></div>
+          <div class="card"><span class="tag">Size</span><h3>Motors &amp; props</h3><p>Thrust-to-weight, KV, cell count and prop size: picking a propulsion set that matches the job.</p></div>
+          <div class="card"><span class="tag">Fly</span><h3>Flight logs</h3><p>Test flights, tuning notes and what went wrong, so you can skip my mistakes.</p></div>
+          <div class="card"><span class="tag">Learn</span><h3>Rules made simple</h3><p>Drone Rules 2021, Digital Sky, UIN and the Remote Pilot Certificate, in plain words.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="alt">
+      <div class="wrap two">
+        <div>
+          <h2>About</h2>
+          <p>I'm A. Praveen, a mechanical engineer from Visakhapatnam, now in Hyderabad. I started building drones in college and won 2nd prize at Aviskara 2023 (Raghu Engineering College) with a drone inspection project.</p>
+          <p>Drones for Life is my personal project: a place to learn in public and to show how drones can take people out of dangerous work.</p>
+        </div>
+        <ul class="facts">
+          <li><b>Since</b> 2023</li>
+          <li><b>Based in</b> Hyderabad, India</li>
+          <li><b>Focus</b> Multirotor design, propulsion sizing, safe flying</li>
+          <li><b>Status</b> Personal project, not a registered company</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="rules">
+      <div class="wrap">
+        <h2>Flying safely</h2>
+        <p class="lead">Every flight shown here follows India's Drone Rules, 2021.</p>
+        <div class="note">
+          Drones over 250 g need a Unique Identification Number (UIN) on Digital Sky, and their pilot a Remote Pilot Certificate from a DGCA-authorised school. Always check the Digital Sky airspace map (green, yellow, red zones) before you fly. Build notes on this site are for learning; they are not a certification that a design is safe to fly.
+        </div>
+      </div>
+    </section>
+
+    <section id="follow" class="alt">
+      <div class="wrap">
+        <h2>Follow along</h2>
+        <p class="lead">New builds and notes go up on Instagram first. For anything else, write to me.</p>
+        <a class="btn btn-primary" href="https://www.instagram.com/dronesforlife.in/" rel="noopener">Instagram</a>
+        <a class="btn" style="border:1px solid var(--line);color:var(--navy);margin-left:10px" href="mailto:unavydronesforlife@gmail.com">Email</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap foot">
+      <span>&copy; 2026 A. Praveen · Drones for Life (personal project)</span>
+      <span>This site uses no cookies or trackers and collects no personal data.</span>
+    </div>
+  </footer>
+</body>
+</html>
